@@ -67,21 +67,9 @@ Betaflight/Cleanflight has the possiblity to output a servo signal to the pwm pi
     feature SERVO_TILT
     save
 
-Now you can setup a servo mapping in the configurator gui. On most F3 targets ESC Pins 7-8 map to servo 0-1. What the servo pane actually does is to map a servo to an input channel. Just set a checkbox on the input which should be used for the servo, i.e. check the box *A2* on *Servo 0*. Now you have mapped Aux2 input channel to ESC Pin 7, the rest of the settings should be kept untouched.
+Now you can setup a servo mapping in the configurator gui. On most F3 targets ESC Pins 7-8 map to servo 0-1. The servo pane actually maps an input channel to a servo(ESC pin). Just set a checkbox on the input which should be used for the servo, i.e. check the box *A2* on *Servo 0*. Now you have mapped Aux2 input channel to ESC Pin 7 (servo0), the rest of the settings should be kept untouched.
 ![Servo Mapping](/images/servo_mapping.png)
 
+### Setting up KISS FC
 
-
-
-
-
-
-
-
-
-
- 
-  
-
-
-
+For the KISS FC its much easier (as supposed). You should just select in the AUX1-4 channel section one of the functions *PWM5: Servo Mid* or *PWM6: Servo Mid*. This maps the input from the selected AUX channel to the PWM5 or PWM6 output pin of the KISS FC.
