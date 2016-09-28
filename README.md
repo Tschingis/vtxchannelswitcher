@@ -88,6 +88,6 @@ This is everything which must be setup.
 
 ## Starting the LUA Script
 
-You can now start the *channelswitcher.lua* script when you are on the main screen of the taranis by a long press on the menu button and then go to the sd card browser (page btn). In the sd card browser navigate to the script and execute it (select it with enter and choose *Execute*). _Have Fun_
+You can now start the *channelswitcher.lua* script when you are on the main screen of the taranis by a long press on the menu button and then go to the sd card browser (page btn). In the sd card browser navigate to the script and execute it (select it with enter and choose *Execute*). **Have Fun**
 
 
