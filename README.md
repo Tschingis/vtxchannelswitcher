@@ -26,7 +26,7 @@ The software for the MCU is build with arduino since its easy to install and use
 * [Arduino IDE 1.6](https://www.arduino.cc/)
 * ATTiny13 Core for arduino 1.6 [Core13](https://sourceforge.net/projects/ard-core13/?source=navbar)  the version *core13_022_arduino_1_6.zip*. Installation is done by unzipping the downloaded file and then put the folder *attiny13* into *Your User/documents/Arduino/hardware*. If the directory should not exists create it.
 
-After installing Arduino IDE and the required ATTiny13 you should start the Arduino IDE and check if the ATTiny13 can be select as Board. 
+After installing Arduino IDE and the required ATTiny13 you should start the Arduino IDE and check if the ATTiny13 can be select as Board. ![Arduino Board Selection](/images/arduino_attiny13a_board.png)
 
 
   
