@@ -79,7 +79,7 @@ For the KISS FC its much easier (as supposed). You should just select in the AUX
 The FrSky Taranis is a very nice remote control with excellent software support. This allows us to put a LUA Script on the Taranis (SD Card) and show a custom screen when executed which modifies the model memory in order to send the correct servo signal for a specific video channel. 
 The script actually computes a global variable value for GV1 (can be changed to any other if already used) which is then used inside a mixer to generate an usuable servo signal for the vtx channel switcher. 
 The first step is to copy over the *channelswitcher.lua* script from the repository to the sd card of the taranis. You can put it anythere on the sd card, but you should use the root of the card since there will be no shortcut (switch assignment) to the script and you have to navigate to the script in the sd card browser of the taranis. 
-The next step is to create a new mixer for the rc channel which has been mapped previously mapped to vtx channel switcher hw. In the mixer change the values
+The next step is to create a new mixer for the rc channel which has been mapped previously to vtx channel switcher hw. In the mixer change the values
 
     Source -> MAX
     Weight -> GV1  (long enter press on the weight allows to assign global variables)
