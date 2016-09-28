@@ -73,3 +73,21 @@ Now you can setup a servo mapping in the configurator gui. On most F3 targets ES
 ### Setting up KISS FC
 
 For the KISS FC its much easier (as supposed). You should just select in the AUX1-4 channel section one of the functions *PWM5: Servo Mid* or *PWM6: Servo Mid*. This maps the input from the selected AUX channel to the PWM5 or PWM6 output pin of the KISS FC.
+
+## Setting up Taranis Channel Switcher LUA Script
+
+The FrSky Taranis is a very nice remote control with excellent software support. This allows us to put a LUA Script on the Taranis (SD Card) and show a custom screen when executed which modifies the model memory in order to send the correct servo signal for a specific video channel. 
+The script actually computes a global variable value for GV1 (can be changed to any other if already used) which is then used inside a mixer to generate an usuable servo signal for the vtx channel switcher. 
+The first step is to copy over the *channelswitcher.lua* script from the repository to the sd card of the taranis. You can put it anythere on the sd card, but you should use the root of the card since there will be no shortcut (switch assignment) to the script and you have to navigate to the script in the sd card browser of the taranis. 
+The next step is to create a new mixer for the rc channel which has been mapped previously mapped to vtx channel switcher hw. In the mixer change the values
+
+    Source -> MAX
+    Weight -> GV1  (long enter press on the weight allows to assign global variables)
+    
+This is everything which must be setup.
+
+## Starting the LUA Script
+
+You can now start the *channelswitcher.lua* script when you are on the main screen of the taranis by a long press on the menu button and then go to the sd card browser (page btn). In the sd card browser navigate to the script and execute it (select it with enter and choose *Execute*). _Have Fun_
+
+
