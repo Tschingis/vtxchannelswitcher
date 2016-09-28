@@ -63,9 +63,9 @@ The most commonly used case for this project will be that it is installed inside
 
 Betaflight/Cleanflight has the possiblity to output a servo signal to the pwm pins on the used board. I tested it only with an RMDO Board but it should apply to other boards as well. Betaflight can enable channel forwarding in the feature section of the configurator but this just leads to frustration as it does not activate all required features so just open the CLI and type
 
-> feature CHANNEL_FORWARDING 
-> feature SERVO_TILT
-> save
+    feature CHANNEL_FORWARDING 
+    feature SERVO_TILT
+    save
 
 Now you can setup a servo mapping in the configurator gui. On most F3 targets ESC Pins 7-8 map to servo 0-1. What the servo pane actually does is to map a servo to an input channel. Just set a checkbox on the input which should be used for the servo, i.e. check the box *A2* on *Servo 0*. Now you have mapped Aux2 input channel to ESC Pin 7, the rest of the settings should be kept untouched.
 ![Servo Mapping](/images/servo_mapping.png)
