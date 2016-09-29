@@ -1,3 +1,8 @@
+/*
+VTX Channel Switcher
+Author: Markus Wilhelm
+*/
+
 #include "BasicSerial3.h"
 
 // timeout in centi seconds after which servo signal will no longer evaluated and a restart is required
