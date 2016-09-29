@@ -1,3 +1,8 @@
+--
+-- VTX Channel Selector
+-- Author: Markus Wilhelm
+--
+
 -- number of global variable, change if needed
 local gvID = 0
 
